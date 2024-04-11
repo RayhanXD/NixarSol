@@ -10,9 +10,4 @@
 </div>
 
 <style lang="scss">
-    .content {
-        max-width: 1200px;
-        padding: 1rem;
-        margin: auto;
-    }
 </style>
