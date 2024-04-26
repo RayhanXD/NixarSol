@@ -11,6 +11,7 @@
 
 <style lang="scss">
     nav {
+        z-index: 2;
         position: fixed;
         width: 100%;
         height: 4rem;
@@ -18,9 +19,9 @@
         display: flex;
         gap: 1rem;
         align-items: center;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(8px);
-        box-shadow: 0px 5px 10px black;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 
         .spacer {
             flex-grow: 2;
