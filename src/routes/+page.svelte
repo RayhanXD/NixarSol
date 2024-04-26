@@ -61,6 +61,7 @@
             background: url('/grain-texture.png');
             background-repeat: repeat;
             mix-blend-mode: soft-light;
+            opacity: 50%;
             z-index: -1;
         }
     }
