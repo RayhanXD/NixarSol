@@ -1,17 +1,30 @@
+@mixin title-xl {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 95%;
+}
+
 @mixin title-md {
-    font-family: "Inter", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 @mixin title-xs {
-    font-family: "Inter", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 24px;
     font-weight: 500;
 }
 
 @mixin paragraph-md {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
     font-weight: normal;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 585px) {
+        font-size: 12px;
+    }
 }

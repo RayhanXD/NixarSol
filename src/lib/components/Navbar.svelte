@@ -1,12 +1,9 @@
 <nav>
     <h1>Nixar Solutions</h1>
     <div class="spacer"></div>
-    <p>Home</p>
-    <p>About Us</p>
-    <p>Our Services</p>
-    <p>Testimonials</p>
-    <p>Contact Us</p>
-    <p>FAQs</p>
+    <p>Home<br />About Us<br />Our Services<br /></p>
+    <div class="spacer"></div>
+    <p>Testimonials<br />FAQ<br />Contact Us<br /></p>
 </nav>
 
 <style lang="scss">
@@ -14,14 +11,12 @@
         z-index: 2;
         position: fixed;
         width: 100%;
-        height: 4rem;
+        height: auto;
+        margin-top: 0.5rem;
         padding: 1rem;
         display: flex;
         gap: 1rem;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(8px);
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        align-items: flex-start;
 
         .spacer {
             flex-grow: 2;
@@ -32,7 +27,7 @@
         }
 
         p {
-            font-weight: 500;
+            @include paragraph-md;
         }
     }
 </style>
