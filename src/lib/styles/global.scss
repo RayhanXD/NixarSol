@@ -1,5 +1,9 @@
 @import 'variables';
 
+:root {
+    color-scheme: dark;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }

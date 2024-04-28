@@ -28,3 +28,14 @@
         font-size: 12px;
     }
 }
+
+@mixin paragraph-lg {
+    font-family: "Helvetica", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 585px) {
+        font-size: 16px;
+    }
+}

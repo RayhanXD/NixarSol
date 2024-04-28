@@ -16,14 +16,27 @@
         <div class="home-container">
             <h1>Nixar Solutions</h1>
             <div class="bottom-text">
-                <p>Social media marketing company <br />Know your potential.</p>
-                <p>We help you reach the platform you deserve</p>
+                <p>Social media marketing agency<br />Know your potential.</p>
+                <p>We help you reach the platform you deserve.</p>
                 <p>[SCROLL]</p>
             </div>
         </div>
     </section>
     <section id="about-us">
-        <div class="section-container"></div>
+        <div class="text-infinite-scroll">
+            <h1> About Us —&nbsp;</h1>
+            <h1> About Us —&nbsp;</h1>
+            <h1> About Us —&nbsp;</h1>
+            <h1> About Us —&nbsp;</h1>
+            <h1> About Us —&nbsp;</h1>
+        </div>
+        <div class="section-container">
+            <p>We are Nixar.</p>
+            <p>A digital marketing agency adapted to the needs of the future.</p>
+            <p>Together, we can evaluate your needs and let you know your potential.</p>
+            <p>Need exposure? We have you covered with likes, comments, and followers. Fast.</p>
+            <p>Get in contact with us to get your social media growth started today.</p>
+        </div>
     </section>
 </div>
 
@@ -34,7 +47,6 @@
                 max-width: calc(1200px + 2rem);
                 padding: 0rem 2rem;
                 margin: auto;
-                min-height: 600px;
             }
         }
     
@@ -98,6 +110,55 @@
             background: $background;
             z-index: 1;
             isolation: isolate;
+            padding-top: 2rem;
+            overflow-x: clip;
+
+            h1 {
+                @include title-xl;
+                font-size: 196px;
+                
+                @media screen and (max-width: 700px) {
+                    font-size: 128px;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 96px;
+                }
+            }
+
+            .text-infinite-scroll {
+                overflow-x: clip;
+                display: flex;
+                width: 1000vw;
+
+                h1 {
+                    animation: scroll 10s infinite linear;
+                    white-space: pre;
+
+                    @media (prefers-reduced-motion) {
+                        animation: scroll 30s infinite linear;
+                    }
+                }
+
+                @keyframes scroll {
+                    from {
+                        transform: translate(0);
+                    }
+
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+
+            .section-container {
+                padding-top: 4rem;
+
+                p {
+                    @include paragraph-lg;
+                    padding-bottom: 1rem;
+                }
+            }
         }
     }
 
