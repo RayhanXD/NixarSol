@@ -8,13 +8,13 @@
         gradient.initGradient('#gradient-canvas');
     });
 </script>
-
 <canvas id="gradient-canvas" data-transition-in />
 <div class="grain-texture"></div>
 <div class="content">
     <section id="home">
         <div class="home-container">
             <h1>Nixar Solutions</h1>
+            <h2>Know your potential</h2>
             <div class="bottom-text">
                 <p>Social media marketing agency<br />Know your potential.</p>
                 <p>We help you reach the platform you deserve.</p>
@@ -31,12 +31,17 @@
             <h1> About Us —&nbsp;</h1>
         </div>
         <div class="section-container">
-            <p>We are Nixar.</p>
-            <p>A digital marketing agency adapted to the needs of the future.</p>
-            <p>Together, we can evaluate your needs and let you know your potential.</p>
-            <p>Need exposure? We have you covered with likes, comments, and followers. Fast.</p>
-            <p>Get in contact with us to get your social media growth started today.</p>
-        </div>
+            <p class="bold">We are Nixar.</p>
+            <p>A digital marketing agency adapted to the <span class="highlight">needs of the future.</span></p>
+            <p>Together, we can evaluate <span class="highlight">your needs</span> and let you know <span class="highlight">your potential.</span></p>
+            <p>Need exposure? We have you covered with likes, comments, and followers. <span class="highlight">Fast.</span></p>
+            <p>Get in <span class="highlight">contact</span> with us to initiate your social media <span class="highlight">growth</span> <span class="highlight">today.</span></p>
+            <p class="bold">Understanding Challenges.</p>
+            <p>We navigate digital complexities to <span class="highlight">unlock</span> business <span class="highlight">opportunities.</span></p>
+            <p class="bold">Expert Solutions.</p>
+            <p>Our <span class="highlight">experts design</span> strategies for measurable <span class="highlight">success.</span></p>
+            <p class="bold">Unleash Potential.</p>
+            <p>Simple, effective, transformative—let’s <span class="highlight">elevate</span> your business together.</p>
     </section>
 </div>
 
@@ -72,6 +77,23 @@
     
             h1 {
                 @include title-xl;
+    
+                @media screen and (max-width: 867px) {
+                    transform: translateY(-10%);
+                }
+    
+                @media screen and (max-width: 585px) {
+                    transform: translateY(-20%);
+                    font-size: 96px;
+                }
+    
+                @media screen and (max-width: 430px) {
+                    font-size: 64px;
+                }
+            }
+
+            h2 {
+                @include title-md;
     
                 @media screen and (max-width: 867px) {
                     transform: translateY(-10%);
@@ -125,7 +147,6 @@
                     font-size: 96px;
                 }
             }
-
             .text-infinite-scroll {
                 overflow-x: clip;
                 display: flex;
@@ -157,6 +178,30 @@
                 p {
                     @include paragraph-lg;
                     padding-bottom: 1rem;
+                }
+                
+                h2 {
+                @include title-md;
+                padding-bottom: 1rem;
+    
+                @media screen and (max-width: 867px) {
+                    transform: translateY(-10%);
+                }
+    
+                @media screen and (max-width: 585px) {
+                    transform: translateY(-20%);
+                    font-size: 96px;
+                }
+    
+                @media screen and (max-width: 430px) {
+                    font-size: 64px;
+                }
+                }
+                .bold {
+                    font-weight: bold;
+                }
+                .highlight {
+                    color: $accent;
                 }
             }
         }
