@@ -1,7 +1,11 @@
 <nav>
     <h1>Nixar Solutions</h1>
     <div class="spacer"></div>
-    <p>Home<br />About Us<br />Our Services<br /></p>
+    <p>
+        <a href='#top' class="hover-link">Home</a><br />
+        <a href='#about-us' class="hover-link">About Us</a><br />
+        <a href='#our-services' class="hover-link">Our Services</a><br />
+    </p>
     <div class="spacer"></div>
     <p>Testimonials<br />FAQ<br />Contact Us<br /></p>
 </nav>

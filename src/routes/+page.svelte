@@ -26,6 +26,8 @@
 			});
 		}
 
+		updateHomeVisibility();
+
 		document.addEventListener('scroll', updateHomeVisibility);
 		return () => document.removeEventListener('scroll', updateHomeVisibility);
 	});
@@ -43,7 +45,9 @@
 			<div class="bottom-text" bind:this={bottomText}>
 				<p>Social media marketing agency<br />Know your potential.</p>
 				<p>We help you reach the platform you deserve.</p>
-				<p>[SCROLL]</p>
+				<a href='#about-us' class='hover-link'>
+					<p>[SCROLL]</p>
+				</a>	
 			</div>
 		</div>
 	</section>
@@ -106,7 +110,7 @@
 				</div>
 				<div class="card">
 					<h3>Content Creation</h3>
-					<p>Filming, editing, graphic design, and copywriting</p>
+					<p>Filming, editing, graphic design, and copywriting.</p>
 				</div>
 				<div class="card">
 					<h3>Advertising</h3>
@@ -122,7 +126,29 @@
 </div>
 
 <style lang="scss">
+	:global(.hover-link) {
+		color: white;
+		text-decoration: none;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 100%;
+			background-color: white;
+			height: 1px;
+			transition: right 600ms cubic-bezier(0.22, 1, 0.36, 1);
+		}
+
+		&:hover::after {
+			right: 0;
+		}
+	}
+
 	.content {
+
 		section {
 			.section-container {
 				max-width: calc(1200px + 2rem);
@@ -291,7 +317,7 @@
 				display: flex;
 				flex-direction: column;
 				gap: 2rem;
-				padding: 2rem;
+				padding: 3rem 2rem;
 
 				.services-list {
 					display: flex;
