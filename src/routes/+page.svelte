@@ -296,10 +296,12 @@
 				.services-list {
 					display: flex;
 					flex-wrap: wrap;
+					justify-content: center;
 					gap: 2rem;
 
 					.card {
-						width: min(300px, 90vw);
+						width: auto;
+						max-width: 300px;
 						aspect-ratio: 1;
 						background-color: rgba(0, 0, 0, 0.4);
 						backdrop-filter: blur(1rem);
@@ -324,6 +326,14 @@
 			h2 {
 				@include title-xl;
 				padding-bottom: 1rem;
+
+				@media screen and (max-width: 600px) {
+					font-size: 96px;
+				}
+
+				@media screen and (max-width: 450px) {
+					font-size: 64px;
+				}
 			}
 
 			p {
