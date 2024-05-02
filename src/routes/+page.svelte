@@ -123,6 +123,61 @@
 			</div>
 		</div>
 	</section>
+	<section id="testimonials">
+		<div class="section-container">
+			<h1>Testimonials</h1>
+			<h3>Insert testimonial here</h3>
+			<div class="testimonial-info">
+				<img src="/tww.jpg" alt='Tire & Wheel Warehouse' />
+				<p>Tire & Wheel Warehouse U.S.A. </p>
+			</div>
+			<h2>Executed Strategies</h2>
+			<div class="dropdown-list-cols">
+
+				<div class="dropdown-list">
+					<div class="spacer"></div>
+					<div class="dropdown">
+						<h3>Content Marketing</h3>
+						<div class="description">
+							<p>Assisting in identifying brand ambassadors, scripting, photo and video editing, crafting advertisements, and creating engaging memes</p>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="dropdown">
+						<h3>Social Media Marketing</h3>
+						<div class="description">
+							<p>Managing and executing social media strategies across TikTok, Instagram, Facebook, and YouTube. This includes content creation, scheduling posts for optimal engagement, researching hashtags, identifying trending audios, monitoring trends, and adapting to algorithm updates.</p>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="dropdown">
+						<h3>Search Engine Optimization</h3>
+						<div class="description">
+							<p>Creating keyword-rich content through blogs and customer testimonials, while strategically utilizing photos and videos to enhance engagement and visibility.</p>
+						</div>
+					</div>
+					<div class="spacer"></div>
+				</div>
+				<div class="dropdown-list">
+					<div class="spacer"></div>
+					<div class="dropdown">
+						<h3>Pay Per Click</h3>
+						<div class="description">
+							<p>Assisting in identifying brand ambassadors, scripting, photo and video editing, crafting advertisements, and creating engaging memes</p>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="dropdown">
+						<h3>News Jacking</h3>
+						<div class="description">
+							<p>Capitalizing on trending news by creating unique twists that highlight our client's offerings. For example, find all the wheels and tires featured in the latest 'Fast and Furious' movie exclusively at Tire Wheel Warehouse.</p>
+						</div>
+					</div>
+					<div class="spacer"></div>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
 
 <style lang="scss">
@@ -364,6 +419,108 @@
 
 			p {
 				@include paragraph-lg;
+			}
+		}
+
+		#testimonials {
+			.section-container {
+				padding-bottom: 3rem;
+
+				h1 {
+					@include title-xl;
+					padding-bottom: 1rem;
+					
+
+					@media screen and (max-width: 600px) {
+						font-size: 96px;
+					}
+
+					@media screen and (max-width: 450px) {
+						font-size: 64px;
+					}
+				}
+				
+				h2 {
+					@include title-md;
+					padding-bottom: 1rem;
+				}
+
+				h3 {
+					@include title-md;
+					padding: 1rem 0;
+					text-align: center;
+				}
+
+				.testimonial-info {
+					margin: 2rem 0;
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+					align-items: center;
+					
+					img {
+						border-radius: 50%;
+						width: 100px;
+						height: 100px;
+					}
+
+					p {
+						text-align: center;
+					}
+				}
+
+				.dropdown-list-cols {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 4rem;
+					min-height: 300px;
+
+					@media screen and (max-width: 800px) {
+						flex-direction: column;
+						gap: 0;
+					}
+				}
+
+				.dropdown-list {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+
+					.spacer {
+						height: 1px;
+						width: 100%;
+						background-color: white;
+					}
+
+					.dropdown {
+						display: flex;
+						flex-direction: column;
+
+						h3 {
+							font-size: 24px;
+							padding: 0.5rem 0;
+							text-align: left;
+						}
+
+						.description {
+							display: grid;
+							grid-template-rows: 0fr;
+							transition: grid-template-rows .7s ease;
+							overflow-y: hidden;
+
+							p {
+								min-height: 0;
+								padding-bottom: 4px;
+							}
+						}
+
+						&:hover {
+							.description {
+								grid-template-rows: 1fr;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
