@@ -1,5 +1,5 @@
 <nav>
-    <h1>Nixar Solutions</h1>
+    <h1><a href='#top' class="hover-link">Nixar Solutions</a></h1>
     <div class="spacer"></div>
     <p>
         <a href='#top' class="hover-link">Home</a><br />
@@ -7,7 +7,11 @@
         <a href='#our-services' class="hover-link">Our Services</a><br />
     </p>
     <div class="spacer"></div>
-    <p>Testimonials<br />FAQ<br />Contact Us<br /></p>
+    <p>
+        <a href='#testimonials' class="hover-link">Testimonials</a><br />
+        <a href='#faq' class="hover-link">FAQ</a><br />
+        Contact Us<br />
+    </p>
 </nav>
 
 <style lang="scss">

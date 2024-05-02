@@ -11,20 +11,17 @@
 		// @ts-ignore
 		gradient.initGradient('#gradient-canvas');
 
-		const homeElements = [
-			homeText, bottomText
-		];
+		const homeElements = [homeText, bottomText];
 
 		const updateHomeVisibility = () => {
 			homeElements.forEach((e) => {
 				if (aboutSection.getBoundingClientRect().top < e.getBoundingClientRect().top) {
-					e.style.visibility = 'hidden'
-				}
-				else {
+					e.style.visibility = 'hidden';
+				} else {
 					e.style.visibility = 'visible';
 				}
 			});
-		}
+		};
 
 		updateHomeVisibility();
 
@@ -45,9 +42,9 @@
 			<div class="bottom-text" bind:this={bottomText}>
 				<p>Social media marketing agency<br />Know your potential.</p>
 				<p>We help you reach the platform you deserve.</p>
-				<a href='#about-us' class='hover-link'>
+				<a href="#about-us" class="hover-link">
 					<p>[SCROLL]</p>
-				</a>	
+				</a>
 			</div>
 		</div>
 	</section>
@@ -126,34 +123,63 @@
 	<section id="testimonials">
 		<div class="section-container">
 			<h1>Testimonials</h1>
-			<h3>Insert testimonial here</h3>
+			<h3>"Partnering with Nixar Marketing Company has been an absolute game-changer for our tire and wheel shop, Tire and Wheel Warehouse. Owen and Anwar, the owners, have been instrumental in taking our online and walk-in retail store to unprecedented levels of success. Their strategic approach, combined with their dedication and expertise, has propelled our business to new heights that I couldn’t have dreamed of. Working with Nixar Marketing Company has truly been an awesome experience, and I highly recommend them to any business looking to revolutionize their marketing efforts."</h3>
 			<div class="testimonial-info">
-				<img src="/tww.jpg" alt='Tire & Wheel Warehouse' />
-				<p>Tire & Wheel Warehouse U.S.A. </p>
+				<img src="/tww.jpg" alt="Tire & Wheel Warehouse" />
+				<p>- Tire & Wheel Warehouse U.S.A.</p>
+			</div>
+			<h2>2-Month Growth</h2>
+			<div class="results">
+				<div class="result">
+					<h4>+133K</h4>
+					<p>Post views</p>
+				</div>
+				<div class="result">
+					<h4>+13K</h4>
+					<p>Likes</p>
+				</div>
+				<div class="result">
+					<h4>+114K</h4>
+					<p>Unique viewers</p>
+				</div>
+				<div class="result">
+					<h4>+13K</h4>
+					<p>Followers</p>
+				</div>
 			</div>
 			<h2>Executed Strategies</h2>
 			<div class="dropdown-list-cols">
-
 				<div class="dropdown-list">
 					<div class="spacer"></div>
 					<div class="dropdown">
 						<h3>Content Marketing</h3>
 						<div class="description">
-							<p>Assisting in identifying brand ambassadors, scripting, photo and video editing, crafting advertisements, and creating engaging memes</p>
+							<p>
+								Assisting in identifying brand ambassadors, scripting, photo and video editing,
+								crafting advertisements, and creating engaging memes
+							</p>
 						</div>
 					</div>
 					<div class="spacer"></div>
 					<div class="dropdown">
 						<h3>Social Media Marketing</h3>
 						<div class="description">
-							<p>Managing and executing social media strategies across TikTok, Instagram, Facebook, and YouTube. This includes content creation, scheduling posts for optimal engagement, researching hashtags, identifying trending audios, monitoring trends, and adapting to algorithm updates.</p>
+							<p>
+								Managing and executing social media strategies across TikTok, Instagram, Facebook,
+								and YouTube. This includes content creation, scheduling posts for optimal
+								engagement, researching hashtags, identifying trending audios, monitoring trends,
+								and adapting to algorithm updates.
+							</p>
 						</div>
 					</div>
 					<div class="spacer"></div>
 					<div class="dropdown">
 						<h3>Search Engine Optimization</h3>
 						<div class="description">
-							<p>Creating keyword-rich content through blogs and customer testimonials, while strategically utilizing photos and videos to enhance engagement and visibility.</p>
+							<p>
+								Creating keyword-rich content through blogs and customer testimonials, while
+								strategically utilizing photos and videos to enhance engagement and visibility.
+							</p>
 						</div>
 					</div>
 					<div class="spacer"></div>
@@ -163,18 +189,124 @@
 					<div class="dropdown">
 						<h3>Pay Per Click</h3>
 						<div class="description">
-							<p>Assisting in identifying brand ambassadors, scripting, photo and video editing, crafting advertisements, and creating engaging memes</p>
+							<p>
+								Assisting in identifying brand ambassadors, scripting, photo and video editing,
+								crafting advertisements, and creating engaging memes
+							</p>
 						</div>
 					</div>
 					<div class="spacer"></div>
 					<div class="dropdown">
 						<h3>News Jacking</h3>
 						<div class="description">
-							<p>Capitalizing on trending news by creating unique twists that highlight our client's offerings. For example, find all the wheels and tires featured in the latest 'Fast and Furious' movie exclusively at Tire Wheel Warehouse.</p>
+							<p>
+								Capitalizing on trending news by creating unique twists that highlight our client's
+								offerings. For example, find all the wheels and tires featured in the latest 'Fast
+								and Furious' movie exclusively at Tire Wheel Warehouse.
+							</p>
 						</div>
 					</div>
 					<div class="spacer"></div>
 				</div>
+			</div>
+		</div>
+	</section>
+	<section id="faq">
+		<div class="section-container">
+			<h1>FAQs</h1>
+			<h3>Have questions? Check out the frequently asked questions below or Contact Us.</h3>
+			<div class="dropdown-list">
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>What <span class="highlight">digital marketing services </span>does NIXAR Solutions offer?</h3>
+					<div class="description">
+						<p>
+							NIXAR Solutions offers a comprehensive range of digital marketing services including social media management, content creation, SEO optimization, pay-per-click advertising, and email marketing, tailored to boost your brand's online presence and engagement.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>Can you explain the <span class="highlight">different pricing</span> models available at NIXAR Solutions?</h3>
+					<div class="description">
+						<p>
+							We offer flexible pricing models to suit various business needs and budgets, including project-based pricing, retainer models for ongoing services, and performance-based pricing that depends on achieving specific results.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>What <span class="highlight">service packages </span>does NIXAR Solutions provide, and are they <span class="highlight">customizable</span>?</h3>
+					<div class="description">
+						<p>
+							Our service packages range from basic digital marketing setups for startups to advanced strategies for large enterprises. Each package can be customized to include additional services such as video marketing and advanced analytics as per your business requirements.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>How can I <span class="highlight">get started</span> with digital marketing services at NIXAR Solutions?</h3>
+					<div class="description">
+						<p>
+							Getting started is simple! Just contact us through our website or give us a call. We'll set up an initial consultation to discuss your needs, objectives, and how our services can be tailored to achieve your goals.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>Are there any specific industries or business sizes that NIXAR Solutions specializes in?</h3>
+					<div class="description">
+						<p>
+							While NIXAR Solutions has expertise across a variety of industries, we specialize in serving small to medium-sized businesses in sectors such as retail, technology, and healthcare, helping them to maximize their digital marketing efforts.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>What makes NIXAR Solutions stand out in the digital marketing industry?</h3>
+					<div class="description">
+						<p>
+							Our commitment to personalized service, our focus on delivering measurable results, and our ability to stay ahead of digital marketing trends set us apart. We pride ourselves on being not just service providers, but strategic partners to our clients.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>How does NIXAR Solutions ensure the effectiveness of its digital marketing strategies?</h3>
+					<div class="description">
+						<p>
+							We use a data-driven approach to monitor and analyze the performance of all campaigns, allowing us to adjust strategies in real time for optimal effectiveness. Regular reports and updates are provided to ensure transparency and alignment with client goals.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>What are the steps involved in beginning a project with NIXAR Solutions?</h3>
+					<div class="description">
+						<p>
+							To start a project, we conduct a detailed analysis of your current marketing efforts, discuss your business objectives, and develop a tailored strategy. Once approved, we move into implementation, with ongoing monitoring and optimization.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>Does NIXAR Solutions offer any ongoing support or maintenance services post project completion?</h3>
+					<div class="description">
+						<p>
+							Yes, we provide ongoing support and maintenance services to ensure that your marketing efforts continue to be effective. This includes regular updates, optimizations, and consultations as needed.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="dropdown">
+					<h3>How does NIXAR Solutions stay updated with the latest digital marketing trends and technologies?</h3>
+					<div class="description">
+						<p>
+							Our team regularly participates in industry workshops and conferences, and we invest in continuous training and certification. This commitment to professional development allows us to implement the latest strategies and technologies for our clients.
+						</p>
+					</div>
+				</div>
+				<div class="spacer"></div>
 			</div>
 		</div>
 	</section>
@@ -202,8 +334,63 @@
 		}
 	}
 
-	.content {
+	.dropdown-list-cols {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
 
+		@media screen and (max-width: 800px) {
+			grid-template-columns: unset;
+			grid-template-rows: 1fr 1fr;
+			gap: 0;
+		}
+	}
+
+	.dropdown-list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.spacer {
+			height: 1px;
+			width: 100%;
+			background-color: white;
+		}
+
+		.dropdown {
+			display: flex;
+			flex-direction: column;
+
+			h3 {
+				@include title-xs;
+				font-size: 24px !important;
+				padding: 0.5rem 0 !important;
+				padding-top: 12px !important;
+				text-align: left !important;
+			}
+
+			.description {
+				display: grid;
+				grid-template-rows: 0fr;
+				transition: grid-template-rows 0.7s ease;
+				overflow-y: hidden;
+
+				p {
+					@include paragraph-md;
+					min-height: 0;
+					padding-bottom: 4px;
+				}
+			}
+
+			&:hover {
+				.description {
+					grid-template-rows: 1fr;
+				}
+			}
+		}
+	}
+
+	.content {
 		section {
 			.section-container {
 				max-width: calc(1200px + 2rem);
@@ -360,7 +547,7 @@
 				.bold {
 					font-weight: bold;
 				}
-                
+
 				.highlight {
 					color: $accent;
 				}
@@ -373,12 +560,14 @@
 				flex-direction: column;
 				gap: 2rem;
 				padding: 3rem 2rem;
+				padding-bottom: 0;
 
 				.services-list {
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
 					gap: 2rem;
+					margin-bottom: 4rem;
 
 					.card {
 						width: auto;
@@ -396,7 +585,7 @@
 						h3 {
 							@include paragraph-lg;
 						}
-						 
+
 						p {
 							@include paragraph-md;
 						}
@@ -424,12 +613,11 @@
 
 		#testimonials {
 			.section-container {
-				padding-bottom: 3rem;
+				padding: 3rem 2rem;
 
 				h1 {
 					@include title-xl;
 					padding-bottom: 1rem;
-					
 
 					@media screen and (max-width: 600px) {
 						font-size: 96px;
@@ -439,25 +627,50 @@
 						font-size: 64px;
 					}
 				}
-				
+
 				h2 {
 					@include title-md;
 					padding-bottom: 1rem;
 				}
 
+				.results {
+					display: flex;
+					justify-content: space-between;
+					gap: 4rem;
+					padding-bottom: 4rem;
+					flex-wrap: wrap;
+
+					.result {
+						display: flex;
+						flex-direction: column;
+
+						h4 {
+							@include title-xl;
+							font-size: 72px;
+							font-weight: 600;
+							color: $accent;
+						}
+
+						p {
+							font-size: 28px;
+						}
+					}
+				}
+
 				h3 {
-					@include title-md;
+					@include title-xs;
 					padding: 1rem 0;
 					text-align: center;
 				}
 
 				.testimonial-info {
 					margin: 2rem 0;
+					padding-bottom: 2rem;
 					display: flex;
 					flex-direction: column;
 					gap: 1rem;
 					align-items: center;
-					
+
 					img {
 						border-radius: 50%;
 						width: 100px;
@@ -470,57 +683,39 @@
 				}
 
 				.dropdown-list-cols {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					gap: 4rem;
-					min-height: 300px;
+					min-height: 340px;
+				}
+			}
+		}
 
-					@media screen and (max-width: 800px) {
-						flex-direction: column;
-						gap: 0;
+		#faq {
+			.section-container {
+				padding: 3rem 2rem;
+
+				.highlight {
+					color: $accent;
+				}
+
+				h1 {
+					@include title-xl;
+					padding-bottom: 1rem;
+
+					@media screen and (max-width: 600px) {
+						font-size: 96px;
+					}
+
+					@media screen and (max-width: 450px) {
+						font-size: 64px;
 					}
 				}
 
-				.dropdown-list {
-					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
-
-					.spacer {
-						height: 1px;
-						width: 100%;
-						background-color: white;
-					}
-
-					.dropdown {
-						display: flex;
-						flex-direction: column;
-
-						h3 {
-							font-size: 24px;
-							padding: 0.5rem 0;
-							text-align: left;
-						}
-
-						.description {
-							display: grid;
-							grid-template-rows: 0fr;
-							transition: grid-template-rows .7s ease;
-							overflow-y: hidden;
-
-							p {
-								min-height: 0;
-								padding-bottom: 4px;
-							}
-						}
-
-						&:hover {
-							.description {
-								grid-template-rows: 1fr;
-							}
-						}
-					}
+				h3 {
+					@include title-xs;
+					padding-top: 1rem;
+					padding-bottom: 2rem;
+					text-align: left;
 				}
+				
 			}
 		}
 	}
