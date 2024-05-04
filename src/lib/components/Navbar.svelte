@@ -21,13 +21,13 @@
     <div class="spacer"></div>
     <p>
         <a href='#top' class="hover-link" on:click|preventDefault={() => scrollToPos(0)}>Home</a><br />
-        <a href='#about-us' class="hover-link" on:click|preventDefault={() => scrollTo('about-us')}>About Us</a><br />
+        <a href='#about-us' class="hover-link" on:click|preventDefault={() => scrollTo('about-us')}><span class="highlight">About Us</span></a><br />
         <a href='#our-services' class="hover-link" on:click|preventDefault={() => scrollTo('our-services')}>Our Services</a><br />
     </p>
     <div class="spacer"></div>
     <p>
         <a href='#testimonials' class="hover-link" on:click|preventDefault={() => scrollTo('testimonials')}>Testimonials</a><br />
-        <a href='#faq' class="hover-link" on:click|preventDefault={() => scrollTo('faq')}>FAQ</a><br />
+        <a href='#faq' class="hover-link" on:click|preventDefault={() => scrollTo('faq')}><span class="highlight">FAQ</span></a><br />
         <a href='#contact-us' class="hover-link" on:click|preventDefault={() => scrollTo('contact-us')}>Contact Us</a><br />
     </p>
 </nav>
@@ -54,6 +54,9 @@
 
         p {
             @include paragraph-md;
+        }
+        .highlight {
+            color: $accent;
         }
     }
 </style>
