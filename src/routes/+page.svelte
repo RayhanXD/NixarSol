@@ -343,6 +343,9 @@
 				</a>
 				<div class="spacer"></div>
 			</div>
+			<div id="footer">
+				<p>Founders: <a href="https://www.instagram.com/anwarmirza01/" class="hover-link">Anwar Mirza</a> & <a href="https://www.instagram.com/owennixon0/" class="hover-link">Owen Nixon</a> <span class="separate">|</span> © 2024 NIXAR Solutions, Inc. All rights reserved. <span class="separate">|</span> Developed by: <a href="https://github.com/RayhanXD" class="hover-link">Rayhan Mohammad</a> & <a href="https://pranav-pakanati.netlify.app/" class="hover-link">Pranav Pakanati</a></p>
+			</div>
 		</div>
 	</section>
 </div>
@@ -813,7 +816,26 @@
 					font-size: 32px;
 					padding: 2rem 0;
 				}
-				
+				#footer {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 1rem 2rem;
+					background: $background;
+					text-align: center;
+
+					p {
+						a {
+							font-weight: bold;
+						}
+
+						.separate {
+							font-size: 24px;
+							margin: 0 1rem;
+						}
+					}
+				}
 			}
 		}
 	}
