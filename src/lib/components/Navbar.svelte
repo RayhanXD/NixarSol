@@ -17,7 +17,7 @@
 </script>
 
 <nav data-scroll data-scroll-sticky data-scroll-target="#scroll-container">
-    <h1><a href='/' class="hover-link" on:click|preventDefault={() => scrollToPos(0)}>Nixar Solutions</a></h1>
+    <h1><a href='/' class="hover-link" on:click|preventDefault={() => scrollToPos(0)}>Nixar <span class="hide-small">Solutions</span></a></h1>
     <div class="spacer"></div>
     <p>
         <a href='/' class="hover-link" on:click|preventDefault={() => scrollToPos(0)}>Home</a><br />
@@ -50,6 +50,12 @@
 
         h1 {
             @include title-xs;
+
+            .hide-small {
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
+            }
         }
 
         p {
