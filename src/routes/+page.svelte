@@ -56,7 +56,7 @@
 			<div class="bottom-text" bind:this={bottomText}>
 				<p>Social media marketing agency<br /><span class="highlight">Know your potential.</span></p>
 				<p>We help you reach the platform <span class="highlight">you deserve.</span></p>
-				<a href="#about-us" class="hover-link" on:click|preventDefault={() => scroll.scrollTo(document.getElementById('about-us'))}>
+				<a href='/' class="hover-link" on:click|preventDefault={() => scroll.scrollTo(document.getElementById('about-us'))}>
 					<p>[SCROLL]</p>
 				</a>
 			</div>
@@ -103,7 +103,7 @@
 				together.
 			</p>
 			<p>
-				Start your journey <span class="hover-link"><a href="mailto:owennixon@nixar.com" class="highlight">here</a></span>
+				Start your journey <a href="mailto:owennixon@nixar.com" class="highlight hover-link">here</a>
 			</p>
 		</div>
 	</section>
@@ -229,7 +229,7 @@
 	<section id="faq">
 		<div class="section-container">
 			<h1>FAQs</h1>
-			<h3>Have questions? Check out the frequently asked questions below or <a href="#contact-us" class="hover-link">Contact Us</a>.</h3>
+			<h3>Have questions? Check out the frequently asked questions below or <a href="/" class="hover-link" on:click|preventDefault={() => scroll.scrollTo(document.getElementById('contact-us'))}>contact us.</a></h3>
 			<div class="dropdown-list">
 				<div class="spacer"></div>
 				<div class="dropdown">
@@ -368,10 +368,14 @@
 			right: 0;
 		}
 	}
+
 	:global(.highlight)
 	{
 		color: $accent;
-		text-decoration: none;
+		
+		&::after {
+			background-color: $accent;
+		}
 	}
 
 	.dropdown-list-cols {
@@ -792,6 +796,10 @@
 
 						@media screen and (max-width: 450px) {
 							font-size: 32px;
+						}
+
+						.highlight {
+							text-align: right;
 						}
 					}
 
