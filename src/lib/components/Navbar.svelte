@@ -3,13 +3,13 @@
     <div class="spacer"></div>
     <p>
         <a href='#top' class="hover-link">Home</a><br />
-        <a href='#about-us' class="hover-link">About Us</a><br />
+        <a href='#about-us' class="hover-link"><span class="highlight">About Us</span></a><br />
         <a href='#our-services' class="hover-link">Our Services</a><br />
     </p>
     <div class="spacer"></div>
     <p>
         <a href='#testimonials' class="hover-link">Testimonials</a><br />
-        <a href='#faq' class="hover-link">FAQ</a><br />
+        <a href='#faq' class="hover-link"><span class="highlight">FAQ</span></a><br />
         <a href='#contact-us' class="hover-link">Contact Us</a><br />
     </p>
 </nav>
@@ -36,6 +36,9 @@
 
         p {
             @include paragraph-md;
+        }
+        .highlight {
+            color: $accent;
         }
     }
 </style>

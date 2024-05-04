@@ -40,8 +40,8 @@
 				<h2>Know your potential</h2>
 			</div>
 			<div class="bottom-text" bind:this={bottomText}>
-				<p>Social media marketing agency<br />Know your potential.</p>
-				<p>We help you reach the platform you deserve.</p>
+				<p>Social media marketing agency<br /><span class="highlight">Know your potential.</span></p>
+				<p>We help you reach the platform <span class="highlight">you deserve.</span></p>
 				<a href="#about-us" class="hover-link">
 					<p>[SCROLL]</p>
 				</a>
@@ -95,27 +95,27 @@
 	<section id="our-services">
 		<div class="section-container">
 			<h2>Our Services</h2>
-			<p>We provide a multitude of services that can help your business gain valuable exposure.</p>
+			<p>We provide a <span class="highlight">multitude of services</span> that can help your business gain <span class="highlight">valuable exposure.</span></p>
 			<div class="services-list">
 				<div class="card">
 					<h3>Social Media Management</h3>
-					<p>Strategy, execution, analytics, and reporting.</p>
+					<p><span class="highlight">Strategy</span>, execution, analytics, and <span class="highlight">reporting.</span></p>
 				</div>
 				<div class="card">
 					<h3>Website Building</h3>
-					<p>Custom design, development, e-commerce, and SEO.</p>
+					<p><span class="highlight">Custom design</span>, development, e-commerce, and <span class="highlight">search engine optimization.</span></p>
 				</div>
 				<div class="card">
 					<h3>Content Creation</h3>
-					<p>Filming, editing, graphic design, and copywriting.</p>
+					<p><span class="highlight">Filming</span>, editing, <span class="highlight">graphic design</span>, and copywriting.</p>
 				</div>
 				<div class="card">
 					<h3>Advertising</h3>
-					<p>Facebook ads, flyers, and other promotional materials.</p>
+					<p><span class="highlight">Facebook ads</span>, flyers, and other <span class="highlight">promotional materials.</span></p>
 				</div>
 				<div class="card">
 					<h3>Customer Engagement</h3>
-					<p>Automated chat responses, surveys, and review management.</p>
+					<p><span class="highlight">Automated chat responses</span>, surveys, and <span class="highlight">review management.</span></p>
 				</div>
 			</div>
 		</div>
@@ -123,7 +123,7 @@
 	<section id="testimonials">
 		<div class="section-container">
 			<h1>Testimonials</h1>
-			<h3>"Partnering with Nixar Marketing Company has been an absolute game-changer for our tire and wheel shop, Tire and Wheel Warehouse. Owen and Anwar, the owners, have been instrumental in taking our online and walk-in retail store to unprecedented levels of success. Their strategic approach, combined with their dedication and expertise, has propelled our business to new heights that I couldn’t have dreamed of. Working with Nixar Marketing Company has truly been an awesome experience, and I highly recommend them to any business looking to revolutionize their marketing efforts."</h3>
+			<h3>"Partnering with Nixar Marketing Company has been an absolute <span class="highlight">game-changer</span> for our tire and wheel shop, Tire and Wheel Warehouse. Owen and Anwar, the owners, have been <span class="highlight">instrumental</span> in taking our online and walk-in retail store to <span class="highlight">unprecedented levels of success</span>. Their strategic approach, combined with their <span class="highlight">dedication and expertise</span>, has propelled our business to <span class="highlight">new heights</span> that I couldn’t have dreamed of. Working with Nixar Marketing Company has truly been an awesome experience, and I highly recommend them to any business looking to <span class="highlight">revolutionize their marketing efforts</span>."</h3>
 			<div class="testimonial-info">
 				<img src="/tww.jpg" alt="Tire & Wheel Warehouse" />
 				<p>- Tire & Wheel Warehouse U.S.A.</p>
@@ -152,7 +152,7 @@
 				<div class="dropdown-list">
 					<div class="spacer"></div>
 					<div class="dropdown">
-						<h3>Content Marketing</h3>
+						<h3>Content <span class="highlight">Marketing</span></h3>
 						<div class="description">
 							<p>
 								Assisting in identifying brand ambassadors, scripting, photo and video editing,
@@ -162,7 +162,7 @@
 					</div>
 					<div class="spacer"></div>
 					<div class="dropdown">
-						<h3>Social Media Marketing</h3>
+						<h3>Social <span class="highlight">Media</span> Marketing</h3>
 						<div class="description">
 							<p>
 								Managing and executing social media strategies across TikTok, Instagram, Facebook,
@@ -174,7 +174,7 @@
 					</div>
 					<div class="spacer"></div>
 					<div class="dropdown">
-						<h3>Search Engine Optimization</h3>
+						<h3>Search <span class="highlight">Engine</span> Optimization</h3>
 						<div class="description">
 							<p>
 								Creating keyword-rich content through blogs and customer testimonials, while
@@ -187,7 +187,7 @@
 				<div class="dropdown-list">
 					<div class="spacer"></div>
 					<div class="dropdown">
-						<h3>Pay Per Click</h3>
+						<h3>Pay <span class="highlight">Per</span> Click</h3>
 						<div class="description">
 							<p>
 								Assisting in identifying brand ambassadors, scripting, photo and video editing,
@@ -197,7 +197,7 @@
 					</div>
 					<div class="spacer"></div>
 					<div class="dropdown">
-						<h3>News Jacking</h3>
+						<h3>News <span class="highlight">Jacking</span></h3>
 						<div class="description">
 							<p>
 								Capitalizing on trending news by creating unique twists that highlight our client's
@@ -214,7 +214,7 @@
 	<section id="faq">
 		<div class="section-container">
 			<h1>FAQs</h1>
-			<h3>Have questions? Check out the frequently asked questions below or Contact Us.</h3>
+			<h3>Have questions? Check out the frequently asked questions below or <a href="#contact-us" class="hover-link">Contact Us</a>.</h3>
 			<div class="dropdown-list">
 				<div class="spacer"></div>
 				<div class="dropdown">
@@ -254,7 +254,7 @@
 				</div>
 				<div class="spacer"></div>
 				<div class="dropdown">
-					<h3>Are there any specific industries or business sizes that NIXAR Solutions specializes in?</h3>
+					<h3>Are there any <span class="highlight">specific industries</span> or business sizes that NIXAR Solutions <span class="highlight">specializes</span> in?</h3>
 					<div class="description">
 						<p>
 							While NIXAR Solutions has expertise across a variety of industries, we specialize in serving small to medium-sized businesses in sectors such as retail, technology, and healthcare, helping them to maximize their digital marketing efforts.
@@ -263,7 +263,7 @@
 				</div>
 				<div class="spacer"></div>
 				<div class="dropdown">
-					<h3>What makes NIXAR Solutions stand out in the digital marketing industry?</h3>
+					<h3>What makes NIXAR Solutions <span class="highlight">stand out</span> in the digital marketing <span class="highlight">industry</span>?</h3>
 					<div class="description">
 						<p>
 							Our commitment to personalized service, our focus on delivering measurable results, and our ability to stay ahead of digital marketing trends set us apart. We pride ourselves on being not just service providers, but strategic partners to our clients.
@@ -272,7 +272,7 @@
 				</div>
 				<div class="spacer"></div>
 				<div class="dropdown">
-					<h3>How does NIXAR Solutions ensure the effectiveness of its digital marketing strategies?</h3>
+					<h3>How does NIXAR Solutions <span class="highlight">ensure the effectiveness</span> of its digital marketing <span class="highlight">strategies</span>?</h3>
 					<div class="description">
 						<p>
 							We use a data-driven approach to monitor and analyze the performance of all campaigns, allowing us to adjust strategies in real time for optimal effectiveness. Regular reports and updates are provided to ensure transparency and alignment with client goals.
@@ -281,7 +281,7 @@
 				</div>
 				<div class="spacer"></div>
 				<div class="dropdown">
-					<h3>What are the steps involved in beginning a project with NIXAR Solutions?</h3>
+					<h3>What are the <span class="highlight">steps involved</span> in beginning a project with NIXAR Solutions?</h3>
 					<div class="description">
 						<p>
 							To start a project, we conduct a detailed analysis of your current marketing efforts, discuss your business objectives, and develop a tailored strategy. Once approved, we move into implementation, with ongoing monitoring and optimization.
@@ -290,7 +290,7 @@
 				</div>
 				<div class="spacer"></div>
 				<div class="dropdown">
-					<h3>Does NIXAR Solutions offer any ongoing support or maintenance services post project completion?</h3>
+					<h3>Does NIXAR Solutions offer any <span class="highlight">ongoing support</span> or maintenance <span class="highlight">services</span> post project completion?</h3>
 					<div class="description">
 						<p>
 							Yes, we provide ongoing support and maintenance services to ensure that your marketing efforts continue to be effective. This includes regular updates, optimizations, and consultations as needed.
@@ -299,7 +299,7 @@
 				</div>
 				<div class="spacer"></div>
 				<div class="dropdown">
-					<h3>How does NIXAR Solutions stay updated with the latest digital marketing trends and technologies?</h3>
+					<h3>How does NIXAR Solutions stay <span class="highlight">updated</span> with the <span class="highlight">latest digital marketing trends</span> and technologies?</h3>
 					<div class="description">
 						<p>
 							Our team regularly participates in industry workshops and conferences, and we invest in continuous training and certification. This commitment to professional development allows us to implement the latest strategies and technologies for our clients.
@@ -316,15 +316,15 @@
 			<div class="dropdown-list">
 				<div class="spacer"></div>
 				<a href="mailto:nixarsolutions@gmail.com">
-					<h3><span>Inquiries</span><span>nixarsolutions@gmail.com</span></h3>
+					<h3><span>Inquiries</span><span class="highlight">nixarsolutions@gmail.com</span></h3>
 				</a>
 				<div class="spacer"></div>
 				<a href="tel:972-469-2699">
-					<h3><span>Call Us</span><span>972-469-2699</span></h3>
+					<h3><span>Call Us</span><span class="highlight">972-469-2699</span></h3>
 				</a>
 				<div class="spacer"></div>
 				<a href="https://instagram.com/nixarsolutions">
-					<h3><span>Instagram</span><span>@nixarsolutions</span></h3>
+					<h3><span>Instagram</span><span class="highlight">@nixarsolutions</span></h3>
 				</a>
 				<div class="spacer"></div>
 			</div>
@@ -352,6 +352,10 @@
 		&:hover::after {
 			right: 0;
 		}
+	}
+	:global(.highlight)
+	{
+		color: $accent;
 	}
 
 	.dropdown-list-cols {
@@ -567,10 +571,6 @@
 				.bold {
 					font-weight: bold;
 				}
-
-				.highlight {
-					color: $accent;
-				}
 			}
 		}
 
@@ -711,10 +711,6 @@
 		#faq {
 			.section-container {
 				padding: 3rem 2rem;
-
-				.highlight {
-					color: $accent;
-				}
 
 				h1 {
 					@include title-xl;
