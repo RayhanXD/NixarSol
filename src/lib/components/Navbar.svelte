@@ -1,16 +1,34 @@
-<nav>
-    <h1><a href='#top' class="hover-link">Nixar Solutions</a></h1>
+<script lang='ts'>
+    export let scrollStore;
+
+    let scroll: any;
+
+    scrollStore.subscribe((v: any) => {
+        scroll = v;
+    })
+
+    const scrollTo = (id: string) => {
+        scroll.scrollTo(document.getElementById(id));
+    }
+
+    const scrollToPos = (pos: number) => {
+        scroll.scrollTo(pos);
+    }
+</script>
+
+<nav data-scroll data-scroll-sticky data-scroll-target="#scroll-container">
+    <h1><a href='#top' class="hover-link" on:click|preventDefault={() => scrollToPos(0)}>Nixar Solutions</a></h1>
     <div class="spacer"></div>
     <p>
-        <a href='#top' class="hover-link">Home</a><br />
-        <a href='#about-us' class="hover-link">About Us</a><br />
-        <a href='#our-services' class="hover-link">Our Services</a><br />
+        <a href='#top' class="hover-link" on:click|preventDefault={() => scrollToPos(0)}>Home</a><br />
+        <a href='#about-us' class="hover-link" on:click|preventDefault={() => scrollTo('about-us')}>About Us</a><br />
+        <a href='#our-services' class="hover-link" on:click|preventDefault={() => scrollTo('our-services')}>Our Services</a><br />
     </p>
     <div class="spacer"></div>
     <p>
-        <a href='#testimonials' class="hover-link">Testimonials</a><br />
-        <a href='#faq' class="hover-link">FAQ</a><br />
-        <a href='#contact-us' class="hover-link">Contact Us</a><br />
+        <a href='#testimonials' class="hover-link" on:click|preventDefault={() => scrollTo('testimonials')}>Testimonials</a><br />
+        <a href='#faq' class="hover-link" on:click|preventDefault={() => scrollTo('faq')}>FAQ</a><br />
+        <a href='#contact-us' class="hover-link" on:click|preventDefault={() => scrollTo('contact-us')}>Contact Us</a><br />
     </p>
 </nav>
 

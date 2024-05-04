@@ -1,8 +1,42 @@
 @import 'variables';
 
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-SemiBolditalic.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Thin.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Book.otf');
+}
+
 :root {
     color-scheme: dark;
-    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {

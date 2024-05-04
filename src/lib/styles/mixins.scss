@@ -1,5 +1,5 @@
 @mixin title-xl {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Neue Montreal', sans-serif;
     font-size: 128px;
     font-weight: 400;
     letter-spacing: -0.03em;
@@ -7,19 +7,19 @@
 }
 
 @mixin title-md {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Neue Montreal", sans-serif;
     font-size: 48px;
     font-weight: 400;
 }
 
 @mixin title-xs {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Neue Montreal", sans-serif;
     font-size: 24px;
     font-weight: 500;
 }
 
 @mixin paragraph-md {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Neue Montreal", sans-serif;
     font-size: 16px;
     font-weight: normal;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
 }
 
 @mixin paragraph-lg {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Neue Montreal", sans-serif;
     font-size: 24px;
     font-weight: normal;
     text-transform: uppercase;

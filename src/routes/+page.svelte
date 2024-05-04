@@ -1,12 +1,27 @@
 <script lang="ts">
+	// @ts-ignore 
+	import LocomotiveScroll from 'locomotive-scroll';
 	import { Gradient } from '$lib/Gradient';
-	import { onMount } from 'svelte';
+	import { getContext, onMount } from 'svelte';
+	import { type Writable } from 'svelte/store';
 
 	let homeText: HTMLDivElement;
 	let bottomText: HTMLDivElement;
 	let aboutSection: HTMLElement;
+	let scroll: { scrollTo: (arg0: string | HTMLElement | null) => void; on: (arg0: string, arg1: () => void) => void; };
+
+	const scrollStore: Writable<any> = (getContext('locomotive-scroll') as any).scrollStore;
 
 	onMount(() => {
+		scroll = new LocomotiveScroll({
+			el: document.querySelector('[data-scroll-container]'),
+			smooth: true
+		});
+		scrollStore.set(scroll);
+
+		scrollTo({ top: 0 });
+		scroll.scrollTo('top');
+
 		const gradient = new Gradient();
 		// @ts-ignore
 		gradient.initGradient('#gradient-canvas');
@@ -25,16 +40,15 @@
 
 		updateHomeVisibility();
 
-		document.addEventListener('scroll', updateHomeVisibility);
-		return () => document.removeEventListener('scroll', updateHomeVisibility);
+		scroll.on('scroll', () => updateHomeVisibility());
 	});
 </script>
 
-<canvas id="gradient-canvas" data-transition-in />
-<div class="grain-texture"></div>
+<canvas id="gradient-canvas" data-transition-in data-scroll data-scroll-sticky data-scroll-target="#scroll-container"/>
+<div class="grain-texture" data-scroll data-scroll-sticky data-scroll-target="#scroll-container"></div>
 <div class="content">
 	<section id="home">
-		<div class="home-container" bind:this={homeText}>
+		<div class="home-container" bind:this={homeText} data-scroll data-scroll-sticky data-scroll-target="#scroll-container">
 			<div bind:this={homeText}>
 				<h1>Nixar Solutions</h1>
 				<h2>Know your potential</h2>
@@ -42,7 +56,7 @@
 			<div class="bottom-text" bind:this={bottomText}>
 				<p>Social media marketing agency<br />Know your potential.</p>
 				<p>We help you reach the platform you deserve.</p>
-				<a href="#about-us" class="hover-link">
+				<a href="#about-us" class="hover-link" on:click|preventDefault={() => scroll.scrollTo(document.getElementById('about-us'))}>
 					<p>[SCROLL]</p>
 				</a>
 			</div>
@@ -427,7 +441,7 @@
 				top: 0;
 				left: 0;
 				right: 0;
-				height: 100%;
+				height: 100svh;
 				min-height: 600px;
 				overflow-y: auto;
 				max-width: calc(1200px + 2rem);
@@ -742,6 +756,7 @@
 		#contact-us {
 			background: black;
 			min-height: 100svh;
+			isolation: isolate;
 
 			.section-container {
 				h1 {
@@ -802,9 +817,8 @@
 		z-index: -2;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
-		min-height: 600px;
+		width: 100svw;
+		height: 100svh;
 		--gradient-color-1: $primary;
 		--gradient-color-2: $secondary;
 		--gradient-color-3: #5b0101;
@@ -815,8 +829,8 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		right: 0;
-		bottom: 0;
+		right: 100svw;
+		bottom: 100svh;
 		background: url('/grain-texture.png');
 		background-repeat: repeat;
 		mix-blend-mode: soft-light;
