@@ -59,8 +59,7 @@
 		<div class="section-container">
 			<p class="bold">We are Nixar.</p>
 			<p>
-				A digital marketing agency adapted to the <span class="highlight">needs of the future.</span
-				>
+				A digital marketing agency adapted to the <span class="highlight">needs of the future.</span>
 			</p>
 			<p>
 				Together, we can evaluate <span class="highlight">your needs</span> and let you know
@@ -68,8 +67,7 @@
 			</p>
 			<p>
 				Need exposure? We have you covered with likes, comments, and followers. <span
-					class="highlight">Fast.</span
-				>
+					class="highlight">Fast.</span>
 			</p>
 			<p>
 				Get in <span class="highlight">contact</span> with us to initiate your social media
@@ -89,6 +87,9 @@
 			<p>
 				Simple, effective, transformative—let’s <span class="highlight">elevate</span> your business
 				together.
+			</p>
+			<p>
+				Start your journey <span class="hover-link"><a href="mailto:owennixon@nixar.com" class="highlight">here</a></span>
 			</p>
 		</div>
 	</section>
@@ -315,12 +316,12 @@
 			<h1>Contact Us</h1>
 			<div class="dropdown-list">
 				<div class="spacer"></div>
-				<a href="mailto:nixarsolutions@gmail.com">
-					<h3><span>Inquiries</span><span class="highlight">nixarsolutions@gmail.com</span></h3>
+				<a href="mailto:anwarmirza@nixar.com">
+					<h3><span>Inquiries</span><span class="highlight">anwarmirza@nixar.com<br>owennixon@nixar.com</span></h3>
 				</a>
 				<div class="spacer"></div>
 				<a href="tel:972-469-2699">
-					<h3><span>Call Us</span><span class="highlight">972-469-2699</span></h3>
+					<h3><span>Call Us</span><span class="highlight">972-469-2699<br>214-885-3366</span></h3>
 				</a>
 				<div class="spacer"></div>
 				<a href="https://instagram.com/nixarsolutions">
@@ -356,6 +357,7 @@
 	:global(.highlight)
 	{
 		color: $accent;
+		text-decoration: none;
 	}
 
 	.dropdown-list-cols {
