@@ -19,9 +19,6 @@
 		});
 		scrollStore.set(scroll);
 
-		scrollTo({ top: 0 });
-		scroll.scrollTo('top');
-
 		const gradient = new Gradient();
 		// @ts-ignore
 		gradient.initGradient('#gradient-canvas');
@@ -44,8 +41,6 @@
 	});
 </script>
 
-<canvas id="gradient-canvas" data-transition-in data-scroll data-scroll-sticky data-scroll-target="#scroll-container"/>
-<div class="grain-texture" data-scroll data-scroll-sticky data-scroll-target="#scroll-container"></div>
 <div class="content">
 	<section id="home">
 		<div class="home-container" bind:this={homeText} data-scroll data-scroll-sticky data-scroll-target="#scroll-container">
@@ -369,8 +364,7 @@
 		}
 	}
 
-	:global(.highlight)
-	{
+	:global(.highlight) {
 		color: $accent;
 		
 		&::after {
@@ -384,8 +378,9 @@
 		gap: 4rem;
 
 		@media screen and (max-width: 800px) {
-			grid-template-columns: unset;
-			grid-template-rows: 1fr 1fr;
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
 			gap: 0;
 		}
 	}
@@ -482,6 +477,7 @@
 
 			h2 {
 				@include title-md;
+				line-height: 102%;
 
 				@media screen and (max-width: 867px) {
 					transform: translateY(-10%);
@@ -489,11 +485,11 @@
 
 				@media screen and (max-width: 585px) {
 					transform: translateY(-20%);
-					font-size: 96px;
+					font-size: 48px;
 				}
 
 				@media screen and (max-width: 430px) {
-					font-size: 64px;
+					font-size: 32px;
 				}
 			}
 
@@ -724,6 +720,10 @@
 
 				.dropdown-list-cols {
 					min-height: 340px;
+
+					@media screen and (max-width: 800px) {
+						min-height: 0;
+					}
 				}
 			}
 		}
@@ -793,13 +793,19 @@
 						flex-wrap: wrap;
 						justify-content: space-between;
 						padding: 0.5rem 0;
+						column-gap: 1rem;
 
-						@media screen and (max-width: 450px) {
+						@media screen and (max-width: 550px) {
 							font-size: 32px;
+						}
+
+						@media screen and (max-width: 380px) {
+							font-size: 24px;
 						}
 
 						.highlight {
 							text-align: right;
+							flex: 2;
 						}
 					}
 
@@ -807,40 +813,7 @@
 						opacity: 1 !important;
 					}
 				}
-				
-				h4 {
-					@include title-xs;
-					font-size: 32px;
-					padding: 2rem 0;
-				}
-				
 			}
 		}
-	}
-
-	#gradient-canvas {
-		position: fixed;
-		z-index: -2;
-		top: 0;
-		left: 0;
-		width: 100svw;
-		height: 100svh;
-		--gradient-color-1: $primary;
-		--gradient-color-2: $secondary;
-		--gradient-color-3: #5b0101;
-		--gradient-color-4: #140000;
-	}
-
-	.grain-texture {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 100svw;
-		bottom: 100svh;
-		background: url('/grain-texture.png');
-		background-repeat: repeat;
-		mix-blend-mode: soft-light;
-		opacity: 50%;
-		z-index: -1;
 	}
 </style>
