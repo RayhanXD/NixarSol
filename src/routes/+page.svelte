@@ -8,7 +8,9 @@
 	let homeText: HTMLDivElement;
 	let bottomText: HTMLDivElement;
 	let aboutSection: HTMLElement;
-	let scroll: { scrollTo: (arg0: string | HTMLElement | null) => void; on: (arg0: string, arg1: () => void) => void; };
+	let scroll: {
+		destroy(): any; scrollTo: (arg0: string | HTMLElement | null) => void; on: (arg0: string, arg1: () => void) => void; 
+	};
 
 	const scrollStore: Writable<any> = (getContext('locomotive-scroll') as any).scrollStore;
 
@@ -37,7 +39,8 @@
 
 		updateHomeVisibility();
 
-		scroll.on('scroll', () => updateHomeVisibility());
+		scroll.on('scroll', updateHomeVisibility);
+		return () => scroll.destroy();
 	});
 </script>
 
@@ -338,9 +341,22 @@
 				</a>
 				<div class="spacer"></div>
 			</div>
-			<div id="footer">
-				<p>Founders: <a href="https://www.instagram.com/anwarmirza01/" class="hover-link">Anwar Mirza</a> & <a href="https://www.instagram.com/owennixon0/" class="hover-link">Owen Nixon</a> <span class="separate">|</span> © 2024 NIXAR Solutions, Inc. All rights reserved. <span class="separate">|</span> Developed by: <a href="https://github.com/RayhanXD" class="hover-link">Rayhan Mohammad</a> & <a href="https://pranav-pakanati.netlify.app/" class="hover-link">Pranav Pakanati</a></p>
-			</div>
+		</div>
+		<div id="footer">
+			<p>
+				Founders:
+				<a href="https://www.instagram.com/anwarmirza01/" class="hover-link">
+					Anwar Mirza
+				</a>
+				& 
+				<a href="https://www.instagram.com/owennixon0/" class="hover-link">
+					Owen Nixon
+				</a>
+				<span class="separate">|</span>
+				© 2024 NIXAR Solutions, Inc. All rights reserved. 
+				<span class="separate">|</span>
+				Developed by: <a href="https://github.com/RayhanXD" class="hover-link">Rayhan Mohammad</a> & <a href="https://pranav-pakanati.netlify.app/" class="hover-link">Pranav Pakanati</a>
+			</p>
 		</div>
 	</section>
 </div>
@@ -762,8 +778,15 @@
 			background: black;
 			min-height: 100svh;
 			isolation: isolate;
+			position: relative;
+			display: flex;
+			align-items: stretch;
+			flex-direction: column;
 
 			.section-container {
+				flex: 2;
+				width: 100%;
+
 				h1 {
 					@include title-xl;
 					padding: 3rem 0 3rem 0;
@@ -822,53 +845,28 @@
 					font-size: 32px;
 					padding: 2rem 0;
 				}
-				
-				#footer {
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					padding: 1rem 2rem;
-					background: $background;
-					text-align: center;
-					p {
-						a {
-							font-weight: bold;
-						}
-						.separate {
-							font-size: 24px;
-							margin: 0 1rem;
+			}
+
+			#footer {
+				padding: 1rem 2rem;
+				background: $background;
+				text-align: center;
+				p {
+					a {
+						font-weight: bold;
+					}
+
+					.separate {
+						font-size: 24px;
+						margin: 0 1rem;
+						line-height: 100%;
+
+						@media screen and (max-width: 585px) {
+							font-size: 16px;
 						}
 					}
 				}
-				
 			}
 		}
-	}
-
-	#gradient-canvas {
-		position: fixed;
-		z-index: -2;
-		top: 0;
-		left: 0;
-		width: 100svw;
-		height: 100svh;
-		--gradient-color-1: $primary;
-		--gradient-color-2: $secondary;
-		--gradient-color-3: #5b0101;
-		--gradient-color-4: #140000;
-	}
-
-	.grain-texture {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 100svw;
-		bottom: 100svh;
-		background: url('/grain-texture.png');
-		background-repeat: repeat;
-		mix-blend-mode: soft-light;
-		opacity: 50%;
-		z-index: -1;
 	}
 </style>
