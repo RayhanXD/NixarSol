@@ -823,6 +823,25 @@
 					padding: 2rem 0;
 				}
 				
+				#footer {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 1rem 2rem;
+					background: $background;
+					text-align: center;
+					p {
+						a {
+							font-weight: bold;
+						}
+						.separate {
+							font-size: 24px;
+							margin: 0 1rem;
+						}
+					}
+				}
+				
 			}
 		}
 	}
