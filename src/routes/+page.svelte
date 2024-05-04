@@ -310,6 +310,26 @@
 			</div>
 		</div>
 	</section>
+	<section id="contact-us">
+		<div class="section-container">
+			<h1>Contact Us</h1>
+			<div class="dropdown-list">
+				<div class="spacer"></div>
+				<a href="mailto:nixarsolutions@gmail.com">
+					<h3><span>Inquiries</span><span>nixarsolutions@gmail.com</span></h3>
+				</a>
+				<div class="spacer"></div>
+				<a href="tel:972-469-2699">
+					<h3><span>Call Us</span><span>972-469-2699</span></h3>
+				</a>
+				<div class="spacer"></div>
+				<a href="https://instagram.com/nixarsolutions">
+					<h3><span>Instagram</span><span>@nixarsolutions</span></h3>
+				</a>
+				<div class="spacer"></div>
+			</div>
+		</div>
+	</section>
 </div>
 
 <style lang="scss">
@@ -714,6 +734,63 @@
 					padding-top: 1rem;
 					padding-bottom: 2rem;
 					text-align: left;
+				}
+				
+			}
+		}
+
+		#contact-us {
+			background: black;
+			min-height: 100svh;
+
+			.section-container {
+				h1 {
+					@include title-xl;
+					padding: 3rem 0 3rem 0;
+
+					@media screen and (max-width: 600px) {
+						font-size: 96px;
+					}
+
+					@media screen and (max-width: 450px) {
+						font-size: 64px;
+					}
+				}
+
+				.dropdown-list:hover {
+					a {
+						opacity: 0.4;
+					}
+				}
+
+				a {
+					width: 100%;
+					color: white;
+					text-decoration: none;
+					transition: opacity 300ms ease;
+
+					h3 {
+						@include title-md;
+						width: 100%;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						padding: 0.5rem 0;
+
+						@media screen and (max-width: 450px) {
+							font-size: 32px;
+						}
+					}
+
+					&:hover {
+						opacity: 1 !important;
+					}
+				}
+				
+				h4 {
+					@include title-xs;
+					font-size: 32px;
+					padding: 2rem 0;
 				}
 				
 			}

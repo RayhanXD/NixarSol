@@ -10,7 +10,7 @@
     <p>
         <a href='#testimonials' class="hover-link">Testimonials</a><br />
         <a href='#faq' class="hover-link">FAQ</a><br />
-        Contact Us<br />
+        <a href='#contact-us' class="hover-link">Contact Us</a><br />
     </p>
 </nav>
 
