@@ -362,7 +362,7 @@
 </div>
 
 <style lang="scss">
-	:global(.hover-link) {
+:global(.hover-link) {
 		color: white;
 		text-decoration: none;
 		position: relative;
@@ -845,26 +845,7 @@
 					font-size: 32px;
 					padding: 2rem 0;
 				}
-<<<<<<< HEAD
-
-				#footer {
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					padding: 1rem 2rem;
-					background: $background;
-					text-align: center;
-					p {
-						a {
-							font-weight: bold;
-						}
-						.separate {
-							font-size: 24px;
-							margin: 0 1rem;
-=======
 			}
-
 			#footer {
 				padding: 1rem 2rem;
 				background: $background;
@@ -881,7 +862,6 @@
 
 						@media screen and (max-width: 585px) {
 							font-size: 16px;
->>>>>>> 59047afe110807a3180560b86f81e5f1ecc4f052
 						}
 					}
 				}
