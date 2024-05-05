@@ -368,10 +368,10 @@
 	}
 
 	:global(.highlight) {
-		color: $accent;
+		color: $primary;
 		
 		&::after {
-			background-color: $accent;
+			background-color: $primary;
 		}
 	}
 
@@ -822,7 +822,7 @@
 					font-size: 32px;
 					padding: 2rem 0;
 				}
-				
+
 				#footer {
 					position: absolute;
 					bottom: 0;
