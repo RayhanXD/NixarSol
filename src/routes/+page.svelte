@@ -101,7 +101,7 @@
 				together.
 			</p>
 			<p>
-				Start your journey <a href="mailto:owennixon@nixar.com" class="highlight hover-link">here</a>
+				Start your journey <a href="mailto:owenn@nixarsolutions.com" class="highlight hover-link">here</a>
 			</p>
 		</div>
 	</section>
@@ -328,8 +328,8 @@
 			<h1>Contact Us</h1>
 			<div class="dropdown-list">
 				<div class="spacer"></div>
-				<a href="mailto:anwarmirza@nixar.com">
-					<h3><span>Inquiries</span><span class="highlight">anwarmirza@nixar.com<br>owennixon@nixar.com</span></h3>
+				<a href="mailto:anwarm@nixarsolutions.com">
+					<h3><span>Inquiries</span><span class="highlight">anwarm@nixarsolutions.com<br>owenn@nixarsolutions.com</span></h3>
 				</a>
 				<div class="spacer"></div>
 				<a href="tel:972-469-2699">
